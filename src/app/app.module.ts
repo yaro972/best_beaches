@@ -9,12 +9,14 @@ import {MatButtonModule, MatIconModule, MatListModule, MatSidenavModule, MatTool
 import {RouterModule} from '@angular/router';
 import {AccueilComponent} from './accueil/accueil.component';
 import {MainRoutesModule} from './routes/main-routes/main-routes.module';
+import {AboutComponent} from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavComponent,
     AccueilComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

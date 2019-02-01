@@ -1,0 +1,22 @@
+:host {
+  .container {
+    //width: 100vh;
+    height: 90vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background {
+    background-image: url('/assets/img/imgbeaches/Anse_Source_Argent.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90%;
+
+  }
+
+  a {
+    color: aquamarine;
+  }
+
+}
