@@ -3,7 +3,7 @@ export interface Beach {
   beachNames: string;
   pays: string;
   langues: string[];
-  curency: string;
+  currency: string;
   urlMap: string;
   urlImg: string;
   urlPartir: string;

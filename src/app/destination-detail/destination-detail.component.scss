@@ -1,0 +1,10 @@
+:host {
+  .destination-card {
+    max-width: 65vh;
+  }
+
+  .destination-header-image {
+    background-image: url('/assets/img/logo.jpg');
+    background-size: cover;
+  }
+}

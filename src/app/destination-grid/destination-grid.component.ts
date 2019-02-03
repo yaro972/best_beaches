@@ -1,4 +1,4 @@
-import {Component, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {Beach} from '../models/beach';
 
 @Component({
@@ -8,7 +8,8 @@ import {Beach} from '../models/beach';
 })
 export class DestinationGridComponent implements OnInit {
   @Input() dataSource: Beach[];
-  @Output() selectedElem: Beach;
+  @Output() selectedDestinationEvent: EventEmitter<Beach> = new EventEmitter<Beach>();
+
   displayedColumns: string[] = ['img', 'beachNames', 'pays'];
 
   constructor() {
@@ -18,8 +19,6 @@ export class DestinationGridComponent implements OnInit {
   }
 
   onCLick(beach: Beach) {
-    // ev.preventDefault;
-    this.selectedElem = beach;
-
+    this.selectedDestinationEvent.emit(beach);
   }
 }

@@ -2,8 +2,17 @@
 
   <h2>Nos meilleures destinations ...</h2>
 
-  <app-destination-grid *ngIf="beachesList" [dataSource]="beachesList"></app-destination-grid>
+  <div *ngIf="!destination_selected">
 
+    <app-destination-grid (selectedDestinationEvent)="onSelected_Destination($event)" *ngIf="beachesList"
+                          [dataSource]="beachesList"></app-destination-grid>
+  </div>
+
+  <div *ngIf="destination_selected">
+
+    <app-destination-detail (close)="onClose()" (reserveDest)="onReserveDest()"
+                            [destination]="destination_selected"></app-destination-detail>
+  </div>
 
 </ng-container>
 

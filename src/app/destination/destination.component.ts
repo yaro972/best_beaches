@@ -16,6 +16,7 @@ export class DestinationComponent implements OnInit, OnDestroy, AfterViewInit {
 
   beachesList: Beach[] = [];
   private destinationModuleRef: Subscription = null;
+  private destination_selected: Beach = null;
 
 
   constructor(private destinationMo: GetBeachesModule, private cdr: ChangeDetectorRef) {
@@ -42,4 +43,16 @@ export class DestinationComponent implements OnInit, OnDestroy, AfterViewInit {
       });
   }
 
+  onSelected_Destination(ev: any) {
+    console.log(ev);
+    this.destination_selected = ev;
+  }
+
+  onClose() {
+    this.destination_selected = null;
+  }
+
+  onReserveDest() {
+
+  }
 }

@@ -1,0 +1,26 @@
+<mat-card class="destination-card">
+  <mat-card-header>
+    <div class="destination-header-image" mat-card-avatar></div>
+    <mat-card-title>{{destination.beachNames}}</mat-card-title>
+    <!--<mat-card-subtitle>Dog Breed</mat-card-subtitle>-->
+  </mat-card-header>
+  <img alt="Photo of a Shiba Inu" mat-card-image src="{{destination.urlImg}}">
+  <mat-card-content>
+    <h3>Spécificités</h3>
+    <p> {{destination.pays}}
+      <!--<span><img src="{{destination.urlMap}}" alt=""  *ngIf="destination.urlMap" /></span>-->
+    </p>
+    <p>Monnaie: {{destination.currency}}</p>
+    <div>Langue :
+      <ul>
+        <li *ngFor="let langue of destination.langues">{{langue}}</li>
+      </ul>
+    </div>
+    <!--<div>  <a href="{{destination.urlPartir}}" target="_parent ">S'informer avant le départ ....</a></div>-->
+
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="onGoBack()" mat-button>Revenir à la liste</button>
+    <button (click)="onChoose()" mat-button>Choisir cette destination</button>
+  </mat-card-actions>
+</mat-card>
