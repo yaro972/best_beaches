@@ -10,6 +10,10 @@ import {RouterModule} from '@angular/router';
 import {AccueilComponent} from './accueil/accueil.component';
 import {MainRoutesModule} from './routes/main-routes/main-routes.module';
 import {AboutComponent} from './about/about.component';
+import {DestinationComponent} from './destination/destination.component';
+import {MatTableModule} from '@angular/material/table';
+import {HttpClientModule} from '@angular/common/http';
+import {DestinationGridComponent} from './destination-grid/destination-grid.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +21,8 @@ import {AboutComponent} from './about/about.component';
     MainNavComponent,
     AccueilComponent,
     AboutComponent,
+    DestinationComponent,
+    DestinationGridComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,8 +35,11 @@ import {AboutComponent} from './about/about.component';
     MatListModule,
     RouterModule,
     MainRoutesModule,
+    MatTableModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

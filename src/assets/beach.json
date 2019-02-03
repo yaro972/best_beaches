@@ -10,7 +10,7 @@
     ],
     "curency": "La Roupie Seychelloise",
     "urlMap": "/assets/img/mapBeach/ansesourcedargent.png",
-    "urlImg": "/assets/img/imgbeaches/Anse_Source_Argent.jpg",
+    "urlImg": "/assets/img/beaches/Anse_Source_Argent.jpg",
     "urlPartir": "https://www.routard.com/billet_avion/seychelles.htm"
   },
   {
@@ -23,11 +23,11 @@
     ],
     "curency": "Le Dollar",
     "urlMap": "/assets/img/mapBeach/pensacola.png",
-    "urlImg": "/assets/img/imgbeaches/PensacolaBeachFlorida.JPG",
+    "urlImg": "/assets/img/beaches/PensacolaBeachFlorida.JPG",
     "urlPartir": "https://www.routard.com/billet_avion/floride.htm"
   },
   {
-    "id": 2,
+    "id": 3,
     "beachNames": "Zlatni Rat",
     "pays": "Croatie",
     "langues": [
@@ -35,11 +35,11 @@
     ],
     "curency": "Le Kuna",
     "urlMap": "/assets/img/mapBeach/zlatniMap.png",
-    "urlImg": "/assets/img/imgbeaches/zlatniImg.png",
+    "urlImg": "/assets/img/beaches/zlatniImg.png",
     "urlPartir": "https://www.routard.com/guide/croatie/1619/avant_le_depart.htm"
   },
   {
-    "id": 2,
+    "id": 4,
     "beachNames": "Nosy Iranja",
     "pays": "Madagascar",
     "langues": [
@@ -47,7 +47,7 @@
     ],
     "curency": "Ariary, Iraimbilanja",
     "urlMap": "/assets/img/mapBeach/Nosy_Iranja.png",
-    "urlImg": "/assets/img/imgbeaches/Nosy_Iranja.jpg",
+    "urlImg": "/assets/img/beaches/Nosy_Iranja.jpg",
     "urlPartir": "https://www.routard.com/billet_avion/seychelles.htm"
   }
 ]

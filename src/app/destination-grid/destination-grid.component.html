@@ -1,0 +1,34 @@
+<!--<p>-->
+<!--destination-grid works!-->
+
+<!--{{dataSource |json}}-->
+
+<!--</p>-->
+
+<table [dataSource]="dataSource" class="mat-elevation-z8" mat-table>
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Image Column -->
+  <ng-container matColumnDef="img">
+    <th *matHeaderCellDef mat-header-cell></th>
+    <td (click)="onCLick(element)" *matCellDef="let element" mat-cell><img alt="Photo of {{element.beachNames}} beach"
+                                                                           src={{element.urlImg}} width="200"/></td>
+  </ng-container>
+
+  <!-- Beach name Column -->
+  <ng-container matColumnDef="beachNames">
+    <th *matHeaderCellDef mat-header-cell> Plage</th>
+    <td (click)="onCLick(element)" *matCellDef="let element" mat-cell> {{element.beachNames}} </td>
+  </ng-container>
+
+  <!-- Country Column -->
+  <ng-container matColumnDef="pays">
+    <th *matHeaderCellDef mat-header-cell> pays</th>
+    <td (click)="onCLick(element)" *matCellDef="let element" mat-cell> {{element.pays}} </td>
+  </ng-container>
+
+  <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+  <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
+</table>
