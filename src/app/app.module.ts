@@ -15,6 +15,7 @@ import {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from '@angular/common/http';
 import {DestinationGridComponent} from './destination-grid/destination-grid.component';
 import {DestinationDetailComponent} from './destination-detail/destination-detail.component';
+import {ReservationsComponent} from './reservations/reservations.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {DestinationDetailComponent} from './destination-detail/destination-detai
     DestinationComponent,
     DestinationGridComponent,
     DestinationDetailComponent,
+    ReservationsComponent,
   ],
   imports: [
     BrowserModule,

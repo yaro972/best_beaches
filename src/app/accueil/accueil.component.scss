@@ -7,7 +7,7 @@
   }
 
   .background {
-    background-image: url('/assets/img/beaches/Anse_Source_Argent.jpg');
+    background-image: url('/assets/img/beaches/Nosy_Iranja.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -15,8 +15,32 @@
 
   }
 
-  a {
-    color: aquamarine;
+  .title {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    //background-color: rgba(74, 73, 73, 0.19);
+
+    p:nth-child(3) {
+      background-color: rgba(0, 0, 0, 0.65);
+      width: 100px;
+      height: 35px;
+      text-align: center;
+      border: 1px solid #468cd473;
+      line-height: 35px;
+      cursor: pointer;
+    }
+
+    p:nth-child(3):hover {
+      color: #0a0a0a73;
+      background-color: rgba(17, 29, 122, 0.76);
+      border: 2px solid rgba(45, 31, 212, 0.45);
+    }
+
+    a {
+      color: #fbfbfb;
+    }
   }
+
 
 }
