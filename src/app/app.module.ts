@@ -8,7 +8,7 @@ import {LayoutModule} from '@angular/cdk/layout';
 import {MatButtonModule, MatCardModule, MatIconModule, MatListModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {RouterModule} from '@angular/router';
 import {AccueilComponent} from './accueil/accueil.component';
-import {MainRoutesModule} from './routes/main-routes/main-routes.module';
+import {MainRoutesModule} from './routes/main-routes.module';
 import {AboutComponent} from './about/about.component';
 import {DestinationComponent} from './destination/destination.component';
 import {MatTableModule} from '@angular/material/table';
@@ -16,6 +16,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {DestinationGridComponent} from './destination-grid/destination-grid.component';
 import {DestinationDetailComponent} from './destination-detail/destination-detail.component';
 import {ReservationsComponent} from './reservations/reservations.component';
+import {ReserveDestinationComponent} from './reserve-destination/reserve-destination.component';
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import {ReservationsComponent} from './reservations/reservations.component';
     DestinationGridComponent,
     DestinationDetailComponent,
     ReservationsComponent,
+    ReserveDestinationComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
