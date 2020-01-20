@@ -1,8 +1,8 @@
 import {Injectable} from '@angular/core';
 import {Observable, of} from 'rxjs';
-import {Beach} from '../../../models/beach';
 import {catchError, tap} from 'rxjs/operators';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+import {Beach} from '../../../models/beach';
 import {MessageService} from '../message.service/message.service';
 
 @Injectable({

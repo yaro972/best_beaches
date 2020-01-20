@@ -17,7 +17,7 @@ import {ReserveDestinationComponent} from './reservations/reserve-destination/re
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './core/services/memory.service/in-memory-data.service';
-import {DestinationsModule} from './destinations/destinations/destinations.module';
+import {DestinationsModule} from './destinations/destinations.module';
 
 @NgModule({
   declarations: [
