@@ -1,14 +1,13 @@
 import {AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit} from '@angular/core';
-import {GetBeachesModule} from '../modules/get-beaches.module';
-import {Beach} from '../models/beach';
+import {Beach} from '../../models/beach';
 import {Subscription} from 'rxjs';
+import {BeachesService} from '../../core/services/beaches.service/beaches.service';
 
 
 @Component({
   selector: 'app-destination',
   templateUrl: './destination.component.html',
   styleUrls: ['./destination.component.scss'],
-  providers: [GetBeachesModule],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 
@@ -16,10 +15,10 @@ export class DestinationComponent implements OnInit, OnDestroy, AfterViewInit {
 
   beachesList: Beach[] = [];
   private destinationModuleRef: Subscription = null;
-  private destination_selected: Beach = null;
+  public destination_selected: Beach = null;
 
 
-  constructor(private destinationMo: GetBeachesModule, private cdr: ChangeDetectorRef) {
+  constructor(private beachService: BeachesService, private cdr: ChangeDetectorRef) {
   }
 
   ngOnInit() {
@@ -35,8 +34,7 @@ export class DestinationComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   private extracted() {
-    this.destinationModuleRef = this.destinationMo
-      .getBeaches()
+    this.destinationModuleRef = this.beachService.getBeaches()
       .subscribe((data) => {
         this.beachesList = data;
         this.cdr.detectChanges();

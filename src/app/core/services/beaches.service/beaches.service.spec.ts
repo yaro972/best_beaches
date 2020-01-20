@@ -1,8 +1,8 @@
 import {TestBed} from '@angular/core/testing';
 
 import {BeachesService} from './beaches.service';
-import {BEACHES} from '../beach.mock';
-import {Beach} from '../models/beach';
+import {BEACHES} from '../../../beach.mock';
+import {Beach} from '../../../models/beach';
 
 describe('BeachesService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));

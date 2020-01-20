@@ -10,14 +10,14 @@ import {RouterModule} from '@angular/router';
 import {AccueilComponent} from './accueil/accueil.component';
 import {MainRoutesModule} from './routes/main-routes.module';
 import {AboutComponent} from './about/about.component';
-import {DestinationComponent} from './destination/destination.component';
 import {MatTableModule} from '@angular/material/table';
 import {HttpClientModule} from '@angular/common/http';
-import {DestinationGridComponent} from './destination-grid/destination-grid.component';
-import {DestinationDetailComponent} from './destination-detail/destination-detail.component';
-import {ReservationsComponent} from './reservations/reservations.component';
-import {ReserveDestinationComponent} from './reserve-destination/reserve-destination.component';
+import {ReservationsComponent} from './reservations/reservation/reservations.component';
+import {ReserveDestinationComponent} from './reservations/reserve-destination/reserve-destination.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
+import {InMemoryDataService} from './core/services/memory.service/in-memory-data.service';
+import {DestinationsModule} from './destinations/destinations/destinations.module';
 
 @NgModule({
   declarations: [
@@ -25,9 +25,6 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
     MainNavComponent,
     AccueilComponent,
     AboutComponent,
-    DestinationComponent,
-    DestinationGridComponent,
-    DestinationDetailComponent,
     ReservationsComponent,
     ReserveDestinationComponent,
     PageNotFoundComponent,
@@ -46,6 +43,15 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
     MatTableModule,
     HttpClientModule,
     MatCardModule,
+    HttpClientModule,
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+// and returns simulated server responses.
+// Remove it when a real server is ready to receive requests.
+
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, {dataEncapsulation: false}
+    ),
+    DestinationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

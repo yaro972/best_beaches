@@ -2,11 +2,11 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {AccueilComponent} from '../accueil/accueil.component';
 import {AboutComponent} from '../about/about.component';
-import {DestinationComponent} from '../destination/destination.component';
-import {ReservationsComponent} from '../reservations/reservations.component';
-import {ReserveDestinationComponent} from '../reserve-destination/reserve-destination.component';
+import {DestinationComponent} from '../destinations/destination/destination.component';
+import {ReservationsComponent} from '../reservations/reservation/reservations.component';
+import {ReserveDestinationComponent} from '../reservations/reserve-destination/reserve-destination.component';
 import {PageNotFoundComponent} from '../page-not-found/page-not-found.component';
-import {DestinationDetailComponent} from '../destination-detail/destination-detail.component';
+import {DestinationDetailComponent} from '../destinations/destination-detail/destination-detail.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/accueil', pathMatch: 'full'},
@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'destination', component: DestinationComponent},
   {path: 'beach-information/:id', component: DestinationDetailComponent},
   {path: 'reserve/:id', component: ReserveDestinationComponent},
-  {path: 'reservations', component: ReservationsComponent},
+  {path: 'reservation', component: ReservationsComponent},
   {path: 'about', component: AboutComponent},
   {path: '**', component: PageNotFoundComponent},
 ];

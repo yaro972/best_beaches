@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Beach} from '../models/beach';
+import {Beach} from '../../models/beach';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
