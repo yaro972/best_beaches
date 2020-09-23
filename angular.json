@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "bestbeaches"
+  "defaultProject": "bestbeaches",
+  "cli": {
+    "analytics": false
+  }
 }
