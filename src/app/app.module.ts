@@ -11,7 +11,7 @@ import {AccueilComponent} from './accueil/accueil.component';
 import {MainRoutesModule} from './routes/main-routes.module';
 import {AboutComponent} from './about/about.component';
 import {DestinationComponent} from './destination/destination.component';
-import {MatTableModule} from '@angular/material/table';
+import {MatLegacyTableModule as MatTableModule} from '@angular/material/legacy-table';
 import {HttpClientModule} from '@angular/common/http';
 import {DestinationGridComponent} from './destination-grid/destination-grid.component';
 import {DestinationDetailComponent} from './destination-detail/destination-detail.component';
@@ -19,11 +19,11 @@ import {ReservationsComponent} from './reservations/reservations.component';
 import {ReserveDestinationComponent} from './reserve-destination/reserve-destination.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import {MatLegacyButtonModule as MatButtonModule} from '@angular/material/legacy-button';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
-import {MatCardModule} from '@angular/material/card';
-import {MatListModule} from '@angular/material/list';
+import {MatLegacyCardModule as MatCardModule} from '@angular/material/legacy-card';
+import {MatLegacyListModule as MatListModule} from '@angular/material/legacy-list';
 
 @NgModule({
   declarations: [
